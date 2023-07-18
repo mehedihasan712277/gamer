@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* -----------shared design------------- */
+.txt1 {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.txt2 {
+    color: #534C64;
+    font-size: 18px;
+    line-height: 30px;
+}
