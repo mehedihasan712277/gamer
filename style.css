@@ -294,4 +294,21 @@ nav {
     }
 
     /* game--------------------------- */
+    .gameTitle {
+        font-size: 20px;
+    }
+
+    .gameSubTitle {
+        font-size: 14px;
+    }
+
+    .gameImgContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gTxtContainer {
+        font-size: 14px;
+        text-align: center;
+    }
 }
