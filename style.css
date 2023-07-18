@@ -2,17 +2,296 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-/* -----------shared design------------- */
-.txt1 {
+
+/* ===============header part=================== */
+
+nav {
+    width: auto;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoTxt {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.style1 {
+    color: #FF42A5;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu li {
+    padding: 15px 25px;
+    background-color: transparent;
+    border-radius: 8px;
+
+}
+
+.menu li a {
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* banner------------------------ */
+.bannerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-image: url("images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.bannerTitle {
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.style2 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list {
+    margin: 20px 0 35px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.listTxt {
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
 }
 
-.txt2 {
+.bannerBtn1,
+.bannerBtn2 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 48px;
+    border: none;
+}
+
+.bannerBtn1 {
+    background-color: #FF42A5;
+}
+
+.bannerBtn2 {
+    background-color: #4EC5F7;
+}
+
+.bannerImg {
+    width: 550px;
+}
+
+/* =============games part ================= */
+.game {
+    padding: 100px 0;
+}
+
+
+.gameTitle {
+    text-align: center;
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.style3 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gameSubTitle {
     color: #534C64;
+    text-align: center;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.gameImgContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gmaeBox {
+    width: 250px;
+}
+
+.gImgBox {
+    width: 250px;
+    position: relative;
+    border-radius: 16px;
+}
+
+.gImgBox img {
+    width: 100%;
+}
+
+.shadow {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60));
+    visibility: hidden;
+}
+
+.gImgBox:hover .shadow {
+    visibility: visible;
+}
+
+.shadow img {
+    height: 24px;
+    width: 24px;
+}
+
+.gTxtContainer {
+    margin-top: 10px;
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////responsive design////////////// */
+
+@media screen and (max-width:425px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bannerContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+        background-image: none;
+    }
+
+    .bannerContent {
+        width: 100%;
+        background-image: url("images/Group\ 14.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bannerImg {
+        width: 350px;
+    }
+
+    .bannerTitle {
+        font-size: 20px;
+    }
+
+    .style2 {
+        font-size: 40px;
+    }
+
+    .list {
+        margin: 15px 0 25px;
+    }
+
+    .listTxt {
+        font-size: 14px;
+    }
+
+    .bannerBtn1,
+    .bannerBtn2 {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+
+    /* game--------------------------- */
 }
