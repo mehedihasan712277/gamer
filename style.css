@@ -210,7 +210,57 @@ nav {
     line-height: 20px;
 }
 
+/* ================play section============== */
+.play {
+    padding: 50px 0 150px;
+}
 
+.playContainer {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.playPart1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+}
+
+.playTitle {
+    text-align: right;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0B0223;
+    margin: 0px 0 30px;
+}
+
+.style4 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.playDesc {
+    text-align: right;
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.one {
+    width: 500px;
+}
+
+.two {
+    width: 200px;
+    position: relative;
+    bottom: -100px;
+    right: -100px;
+}
 
 
 
