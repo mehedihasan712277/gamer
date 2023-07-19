@@ -189,9 +189,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-radius: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60));
     visibility: hidden;
+}
+
+.watch {
+    font-size: 16px;
+    font-weight: 600;
+    color: #F948B2;
 }
 
 .gImgBox:hover .shadow {
