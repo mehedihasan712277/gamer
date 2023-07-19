@@ -318,14 +318,15 @@ footer {
 }
 
 .footerTxtContainer {
-    width: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 120px);
     justify-content: center;
+    justify-items: center;
     gap: 30px;
-    /* background-color: green; */
 }
 
 .fTxt {
+    /* background-color: red; */
     color: #FFF;
     /* text-align: center; */
     font-size: 18px;
@@ -340,9 +341,10 @@ footer {
 }
 
 .footerIconContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 41px);
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .footerIconContainer button {
@@ -351,21 +353,20 @@ footer {
 }
 
 .footerItemcontainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
     gap: 20px;
 }
 
 .fitem {
     color: rgba(255, 255, 255, 0.60);
-    text-align: center;
     font-size: 16px;
     font-weight: 500;
 }
 
 .lastTxt {
     color: rgba(255, 255, 255, 0.60);
-    text-align: center;
     font-size: 16px;
     font-weight: 500;
 }
@@ -533,5 +534,45 @@ footer {
     .ttxt {
         font-size: 8px;
         font-weight: 600;
+    }
+
+    /* footer--------------------------- */
+    footer {
+        padding: 50px 10px;
+    }
+
+    .footerTxtContainer {
+        grid-template-columns: repeat(3, auto);
+        gap: 10px;
+    }
+
+    .fTxt {
+        font-size: 16px;
+    }
+
+    .footerIconContainer {
+        grid-template-columns: repeat(3, auto);
+        gap: 20px
+    }
+
+    .footerIconContainer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footerItemcontainer {
+        grid-template-columns: repeat(2, auto);
+        gap: 20px
+    }
+
+    .fitem {
+        font-size: 12px;
+    }
+
+    .lastTxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
     }
 }
