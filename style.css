@@ -171,6 +171,8 @@ nav {
     width: 250px;
     position: relative;
     border-radius: 16px;
+    border: 3px solid #FFF;
+
 }
 
 .gImgBox img {
@@ -195,6 +197,10 @@ nav {
 
 .gImgBox:hover .shadow {
     visibility: visible;
+}
+
+.gImgBox:hover {
+    border: 3px solid #F948B2;
 }
 
 .shadow img {
@@ -378,16 +384,113 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
 /* /////////responsive design////////////// */
 
+/* +++++++++for Tab+++++++++++++++++++++++= */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* banner-------------------- */
+    .bannerContainer {
+        padding: 0 20px;
+    }
+
+    .bannerTitle {
+        font-size: 25px;
+    }
+
+    .style2 {
+        font-size: 30px;
+    }
+
+    .listTxt {
+        font-size: 15px;
+    }
+
+    .bannerImg {
+        width: 400px;
+    }
+
+    .bannerBtn1,
+    .bannerBtn2 {
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    /* game------------------------- */
+    .gameImgContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* play------------------------ */
+    .play {
+        padding: 50px 20px;
+    }
+
+    .playTitle {
+        font-size: 20px;
+    }
+
+    .playDesc {
+        font-size: 16px;
+    }
+
+    .one {
+        width: 250px;
+    }
+
+    .two {
+        width: 100px;
+        bottom: -50px;
+        right: -50px;
+    }
+
+    /* type----------------------- */
+    .types {
+        padding: 50px 0;
+    }
+
+    .typeContainer {
+        width: 760px;
+    }
+
+    /* footer--------------------- */
+    footer {
+        padding: 50px 0;
+    }
+
+    .footerTxtContainer {
+        gap: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* +++++++++for mobile device++++++++++++++ */
 @media screen and (max-width:425px) {
     nav {
         flex-direction: column;
