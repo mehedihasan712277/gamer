@@ -170,6 +170,7 @@ nav {
     position: relative;
     border-radius: 16px;
     border: 3px solid #FFF;
+    transition: .5s;
 
 }
 
@@ -285,6 +286,8 @@ nav {
     align-items: center;
     justify-content: center;
     border: 2px solid #FFF;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .typeBox:hover {
@@ -351,6 +354,7 @@ footer {
 .footerIconContainer button {
     border: 0;
     background-color: #0B0223;
+    cursor: pointer;
 }
 
 .footerItemcontainer {
